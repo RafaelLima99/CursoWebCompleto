@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>relative, static, absolute, fixed</title>
+	<style type="text/css">
+		#container{
+			background-color: #FFF;
+			width: 800px;
+			margin: auto ;/*o auto deixa o container centralizado por que ele da uma margim a direta e a esquerda de 					mesmo tamanho*/
+			padding: 10px;
+
+		}
+		body{
+			background-color: #007fc7;
+		}
+		p{
+			width: 300px;
+		}
+		.relative{
+			border:1px solid red;
+			position: relative; /*usado para poder fazer modificaçoes de posição*/
+			/*top, left, right, bottom*/
+			top:20px; /*altera a autura sem levar em consideração os outros objetos*/
+			left: 80px;
+		}
+		.absolute{
+			border:2px solid red;
+			background-color: #F2F2F2; 
+			position: absolute; /*o elemento com posição absoluta sai do fluxo normal do documento e nao afeta os outros elementos da pagina, é como ele nao existise*/
+			top:0px;
+			right: 80px;
+
+		}
+		.fixed{
+			border:2px solid red;
+			background-color: #F2F2F2; 
+			position: fixed;/* fica em um local fixo mesmo que utilize a barra de rolagem*/
+			margin: 0px;
+			bottom: 0px;
+			right: 0px; 
+
+
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>Posicionamentos</h1>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+
+		<p class="fixed">
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+		</p>
+	</div>
+</body>	
+</html>
