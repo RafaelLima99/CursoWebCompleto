@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*
+		px-> tamanho fixo
+		%-> tamanho relativo
+		em-> tamanho relativo ao container pai
+		*/
+		.texto{
+			font-size: 200%; /*vai ficar o tamanho original, para ficar com o tamanho maior que o padrao tem que colocar um valor maior que 100%, ou menor*/
+		}
+		div{
+
+			font-size: 30px;
+		}
+		.texto1{
+			font-size: 1em; /*1em é o tamanho normal do elemto pai, que nesse caso é 30px, entt 1em nao faz nenhuma alteração*/
+		}
+		.texto2{
+			font-size: 2em; /*2em vai ser o dobro do tamanho do texto do elemnto pai ou seja 60px*/
+		}
+		/*utilizando o em, voce pode alterar o tamanho do texto do elemnto pai e vai alterar o texto do elemnto 
+		filho proporcionalmente*/
+
+		
+
+	</style>
+</head>
+<body>
+	<p class="texto">Texto</p>
+	<div>
+		<p class="texto1">Texto1</p>
+		<p class="texto2">Texto2</p>
+	</div>
+</body>
+</html>
