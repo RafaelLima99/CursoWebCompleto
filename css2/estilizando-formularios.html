@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+		fieldset{
+			padding: 1em;
+			margin: 1em;
+			border: 1px solid #ccc;
+			background-color: #f8f8f8;
+
+		}
+		legend{
+			font-weight: bold;
+		}
+		label{
+			display: block; /*para ficar a cima da caixa de texto*/
+			cursor: pointer;
+		}
+		input[type='text']{ /*para formatar apenas inputs do tipo text*/
+			width: 20em;
+		}
+		textarea{
+			width: 20em;
+			height: 10em;
+		}
+		input.radio{
+			width: auto;
+		}
+		.radio{
+			margin-right: 1em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Estilizando Formulários</h1>
+	<form>
+		<fieldset><!--serve para agrupar dados semelhantes-->
+			<legend>Detalhes de contato</legend> <!--legenda para agrupameto-->
+			<div>
+				<label for="nome">Nome:</label><!--seguinifica etiqueta, onde colocamos o nome dos campos do fomulario e o *for* é para quando clicarmos no label ele ir para o inpute, é muito utilizado para recursos de acessibilidade-->
+				<input type="text" name="nome" id="nome">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="text" name="nome" id="email">
+			</div>
+			<div>
+				<label for="url">URL:</label>
+				<input type="text" name="nome" id="url">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Comentarios</legend>
+			<div>	
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem">
+				</textarea>
+			</div>	
+		</fieldset>
+		<fieldset>
+			<legend>Lembre de mim</legend>
+			<div>	
+				<label for="mensagem">
+					<input type="radio" name="lembrar" id="sim" class="radio">Sim
+				</label>
+				
+			</div>	
+			<div>	
+				<label for="mensagem">
+					<input type="radio" name="lembrar" id="nao" class="radio">Não
+				</label>
+				
+			</div>	
+		
+		</fieldset>
+	</form>
+	
+</body>
+</html>
