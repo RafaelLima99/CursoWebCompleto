@@ -1,0 +1,52 @@
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #f2f2f2;
+}
+#container{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	min-width: 720px; /*define que o tamanho min é de 720px casoa tela seja menor vai se ativar a barra de rolagem*/
+	max-width: 1000px; /*se a tela passar desse valor ele vai dexar de ocupar a tela inteira*/
+}
+
+#marca{
+	height: 100%;
+	background:#9E9E9E;
+	text-align: center;
+	line-height: 100px;
+}
+#conteudo{
+	width: 75%;
+	float: right;
+}
+#conteudo-principal{
+	width: 60%;
+	float: left;
+}
+#conteudo-secundario{
+	width: 30%;
+	float: right;
+	padding:10px;
+	background-color: #d1d1d1;
+
+}
+#navegacao {
+	width: 23%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #d1d1d1;
+}
+#navegacao ul {
+	list-style: none;
+}
+#navegacao li a{
+	text-decoration: none;
+}
+
+#rodape{
+	clear: both;
+	background-color: #c4c4c4;
+	padding: 5px;
+}
