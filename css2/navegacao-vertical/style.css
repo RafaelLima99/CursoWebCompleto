@@ -1,0 +1,25 @@
+ul{
+			list-style-type: none; /*retira as bolinhas*/ 
+			padding: 0px;
+			margin: 0px;
+		}
+		ul a {
+			display: block;/*links sao elementos inline e nao conseguimos definir largura, por isso tem que converter em para block*/
+			width: 200px;
+			height: 40px;
+			color: #000;
+			text-decoration: none;
+			text-indent: 40px; /*adciona um espaçamento em todo o texto do elemento, funciona como um pading, só que para texto*/
+			line-height: 40px; /*define a altura da linha do texto, e deixa o texto exatamente no centro dessa linha*/
+			background: #f7b600 url(imagens/menu.png)left bottom; /*arrasta a imagem para esquerda na parte de baixo*/
+		}
+		a:hover, .selecionado a { /*quando tiver uma class selecionado e em seguida um link*/
+			background-position: right bottom; /*arrasta a imagem para direita na parte de baixo*/
+			color:#FFF;
+		}
+		#home #navegacao .home a,
+		#sobre #navegacao .sobre a
+		{
+			background-position: right bottom;
+			color:#FFF;
+		}
